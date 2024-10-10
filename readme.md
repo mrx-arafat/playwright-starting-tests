@@ -11,7 +11,6 @@ This repository demonstrates basic end-to-end testing using Playwright.
    git clone https://github.com/mrx-arafat/playwright-starting-tests.git
    cd playwright-starting-tests
    ```
-
 2. Install Playwright and necessary browsers:
 
    ```
@@ -25,13 +24,11 @@ This repository demonstrates basic end-to-end testing using Playwright.
    ```
    npx playwright test
    ```
-
 2. To run a specific test:
 
    ```
    npx playwright test tests/example.spec.js
    ```
-
 3. To view the report after running tests:
 
    ```
@@ -52,7 +49,6 @@ This repository demonstrates basic end-to-end testing using Playwright.
   ```
   npx playwright codegen
   ```
-
 - Run tests in headed mode (with browser UI):
 
   ```
@@ -61,7 +57,3 @@ This repository demonstrates basic end-to-end testing using Playwright.
 
 **Resources**
 Playwright Documentation: https://playwright.dev/docs/intro
-
----
-
-You can now include this plain text `README` in your repository.
