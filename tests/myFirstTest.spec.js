@@ -6,6 +6,7 @@ test("open page using browser", async ({ browser }) => {
   const page = await context.newPage();
   await page.goto("https://google.com");
 });
-test("open direct page without page", async ({ page }) => {
+
+test.only("open direct page without page", async ({ page }) => {
   await page.goto("https://bing.com");
 });
