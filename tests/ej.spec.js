@@ -32,7 +32,10 @@ test("open page using browser", async ({ page }) => {
   await page.waitForNavigation();
 
   const companyName = faker.company.name();
-  const username = faker.internet.userName();
+  const username = `${faker.internet
+    .userName()
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "")}${Math.floor(Math.random() * 100)}`; // Generate a username with lowercase letters and digits
   const phoneNumber = faker.phone.number();
 
   console.log(`Generated Company Details: 
@@ -45,7 +48,6 @@ test("open page using browser", async ({ page }) => {
   await page.locator("#phone-no").fill(phoneNumber);
 
   await page.locator(".multiselect__tags").click();
-
   await page.locator("div.col-md-6.login-content li:nth-child(11)").click();
 
   const website = faker.internet.url();
@@ -55,5 +57,28 @@ test("open page using browser", async ({ page }) => {
 
   await page.locator("button[type='submit']").click();
 
-  await page.waitForTimeout(3000000);
+  //   await page.waitForTimeout(10000);
+
+  await page.locator("button[class='button dropdown-toggle']").click();
+
+  await page.waitForTimeout(2000);
+
+  await page
+    .locator(
+      "div[class='dropdown profile-control'] li:nth-child(3) a:nth-child(1)"
+    )
+    .click();
+
+  await page.locator("input[placeholder='youremail@gmail.com']").fill(email);
+  await page.locator("input[placeholder='Enter password']").fill(password);
+
+  await page.waitForTimeout(3000);
+
+  await page.locator("button[type='submit']").click();
+
+  await page.waitForURL("https://app.easy.jobs/dashboard");
+
+  await page.locator(".button.info-button").click();
+
+  //   await page.waitForTimeout(300000);
 });
