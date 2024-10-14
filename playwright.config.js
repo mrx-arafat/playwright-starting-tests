@@ -14,7 +14,7 @@ module.exports = defineConfig({
   testDir: "./tests",
 
   //adding timeout
-  timeout: 3 * 1000,
+  timeout: 30 * 1000,
   expect: {
     timeout: 5000,
   },
@@ -36,7 +36,7 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
-    headless: false,
+    headless: true,
   },
 
   /* Configure projects for major browsers */
