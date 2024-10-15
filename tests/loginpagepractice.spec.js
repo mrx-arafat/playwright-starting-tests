@@ -7,19 +7,36 @@ test("Browser Context Playwright test", async ({ page }) => {
 
   console.log(await page.title());
 
-  await page.locator("#username").fill("rahulshetty");
-
+  await page.locator("#username").fill("rahulshettyacademy");
   await page.locator("#password").fill("learning");
 
   await page.locator("#signInBtn").click();
 
-  const errorMessage = await page.locator("[style*='block']").textContent();
+  await page.waitForSelector(".card-body a");
 
-  if (errorMessage) {
+  const isErrorVisible = await page.locator("[style*='block']").isVisible();
+
+  if (isErrorVisible) {
+    const errorMessage = await page.locator("[style*='block']").textContent();
     console.log(`Login error message: ${errorMessage}`);
   } else {
     console.log("Login successful.");
-  }
 
-  await expect(page.locator("[style*='block']")).not.toBeVisible();
+    const firstCardText = await page
+      .locator(".card-body a")
+      .nth(0)
+      .textContent();
+    console.log(`First Card text: ${firstCardText}`);
+
+    const allProductsText = await page
+      .locator(".card-body a")
+      .allTextContents();
+
+    console.log("All products:");
+    allProductsText.forEach((productText, index) => {
+      console.log(`Product ${index + 1}: ${productText}`);
+    });
+
+    expect(allProductsText.length).toBeGreaterThan(0);
+  }
 });
