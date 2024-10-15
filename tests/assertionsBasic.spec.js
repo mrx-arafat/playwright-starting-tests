@@ -14,5 +14,3 @@ test.only("open direct page without browser mention", async ({ page }) => {
 
   await expect(page).toHaveTitle("Bing");
 });
-
-e4rafat + boom1;

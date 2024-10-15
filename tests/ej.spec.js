@@ -61,7 +61,7 @@ test("open page using browser", async ({ page }) => {
 
   await page.locator("button[class='button dropdown-toggle']").click();
 
-  await page.waitForTimeout(2000);
+  //   await page.waitForTimeout(2000);
 
   await page
     .locator(
