@@ -16,7 +16,7 @@ test.only("Child windows handle with text extraction", async ({ browser }) => {
   const text = await newPage.locator(".red").textContent();
 
   const arrayText = text.split("@");
-  const domain = arrayText[1].split(" ")[0];
+  const domain = arrayText[1].split(".")[0];
 
   console.log(domain);
 
