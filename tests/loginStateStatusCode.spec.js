@@ -6,6 +6,14 @@ test.beforeAll(async ({ browser }) => {
   const context = await browser.newContext();
   const page = await context.newPage();
 
+  page.on("request", (request) => {
+    console.log("Request:", request.url());
+  });
+
+  page.on("response", (response) => {
+    console.log("Response:", response.url(), "Status:", response.status());
+  });
+
   await page.goto("https://rahulshettyacademy.com/client");
 
   await page.locator("#userEmail").fill("anshika@gmail.com");
@@ -24,6 +32,14 @@ test("Client App login", async ({ browser }) => {
   const context = await browser.newContext({ storageState: "state.json" });
   const page = await context.newPage();
 
+  page.on("request", (request) => {
+    console.log("Request:", request.url());
+  });
+
+  page.on("response", (response) => {
+    console.log("Response:", response.url(), "Status:", response.status());
+  });
+
   await page.goto("https://rahulshettyacademy.com/client");
 
   await page.waitForLoadState("networkidle");
@@ -37,6 +53,14 @@ test("Test case 2", async ({ browser }) => {
 
   const webContext = await browser.newContext({ storageState: "state.json" });
   const page = await webContext.newPage();
+
+  page.on("request", (request) => {
+    console.log("Request:", request.url());
+  });
+
+  page.on("response", (response) => {
+    console.log("Response:", response.url(), "Status:", response.status());
+  });
 
   await page.goto("https://rahulshettyacademy.com/client");
 
