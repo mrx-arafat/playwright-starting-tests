@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { faker } from "@faker-js/faker";
 
-test("open page using browser", async ({ page }) => {
+test("@Web open page using browser", async ({ page }) => {
   const firstName = faker.name.firstName();
   const lastName = faker.name.lastName();
   const email = faker.internet.email();

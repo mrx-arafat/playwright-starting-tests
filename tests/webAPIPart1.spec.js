@@ -25,7 +25,7 @@ test.beforeAll(async () => {
   console.log("Token:", token);
 });
 
-test("Browser Context - Validating Error Login", async ({ page }) => {
+test("@API Browser Context - Validating Error Login", async ({ page }) => {
   await page.addInitScript((token) => {
     window.localStorage.setItem("token", token);
   }, token);

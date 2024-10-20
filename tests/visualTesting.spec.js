@@ -1,7 +1,7 @@
 const { test, expect } = require("@playwright/test");
 
 test.describe("Visual Regression Tests", () => {
-  test.only("Visual comparison of Google landing page", async ({ page }) => {
+  test("Visual comparison of Google landing page", async ({ page }) => {
     await page.goto("https://google.com/");
 
     expect(await page.screenshot()).toMatchSnapshot("google-landing.png");

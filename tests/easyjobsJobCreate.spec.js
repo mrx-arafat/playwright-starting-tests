@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("test", async ({ page }) => {
+test("@Web test", async ({ page }) => {
   await page.goto("https://app.easy.jobs/login");
   await page.locator(".col-md-6").first().click();
   await page.getByPlaceholder("youremail@gmail.com").click();

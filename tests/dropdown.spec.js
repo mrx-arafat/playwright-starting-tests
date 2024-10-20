@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test.only("UI Controls", async ({ page }) => {
+test("@Web UI Controls", async ({ page }) => {
   await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
 
   const userName = page.locator("#username");
@@ -17,5 +17,5 @@ test.only("UI Controls", async ({ page }) => {
 
   await expect(page.locator(".radiotextsty").last()).toBeChecked();
 
-  await page.pause();
+  // await page.pause();
 });

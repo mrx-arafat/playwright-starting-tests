@@ -19,7 +19,7 @@ test.describe("Client App Test Suite", () => {
     console.log("Login successful and page loaded.");
   });
 
-  test("Client App login and verify loaded state", async ({ page }) => {
+  test("@Web Client App login and verify loaded state", async ({ page }) => {
     console.log("Client app is loaded successfully after login.");
   });
 

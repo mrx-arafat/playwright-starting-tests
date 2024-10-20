@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test.only("Child windows handle with text extraction", async ({ browser }) => {
+test("@Web Child windows handle with text extraction", async ({ browser }) => {
   const context = await browser.newContext();
   const page = await context.newPage();
 
@@ -22,7 +22,7 @@ test.only("Child windows handle with text extraction", async ({ browser }) => {
 
   await page.locator("#username").type(domain);
 
-  await page.pause();
+  // await page.pause();
 
   console.log(await page.locator("#username").textContent());
 });
