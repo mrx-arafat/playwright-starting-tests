@@ -49,3 +49,4 @@ test("Test case 2", async ({ browser }) => {
   const matchingProduct = titles.find((title) => title.includes(productName));
   console.log(`Found matching product: ${matchingProduct}`);
 });
+

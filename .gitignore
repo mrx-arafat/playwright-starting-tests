@@ -3,6 +3,9 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-
+.env
+coffee.json
 /allure-report
 /allure-results
+/tests/xcloud/loginState.json
+tests/xcloud/tests/xcloud/loginState.json

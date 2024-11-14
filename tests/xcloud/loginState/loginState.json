@@ -1,0 +1,45 @@
+{
+  "cookies": [
+    {
+      "name": "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d",
+      "value": "eyJpdiI6IkRIbERwRHIwcDcyK015eC9IMFkvcmc9PSIsInZhbHVlIjoiWTJjVmIrbFUvWmRPRDVNU2lDcHRmVnkzVUxCb3hGcG4vV2FLWEJjQUJMM1U5WGpIU25OamIyRndjS0I5azd6bXZoOXNlUWRNOE5wbU0zaVhubjVXc3RLak02TDU4M0lWMWM1aENuK1Qyc0RUb01CeFpRVk1yR3k2RWZhM21zVm5leTBPREgyOGZpM093TnJqaWFTaVdJaWJvU2RkaUtUMDNvU0lKcVZNbStrV0RMOVAvNmZJZjVheE9LSEIyTFhTbU9xUnVvMDd4SHJwak1oZFdlN2dvZDFNelZocUo2cXI2dWYvYXJpdkpSWT0iLCJtYWMiOiJhNGI3NmU2ZTc5NTcyNTVhYzQ4ZGU0MTkyZGZlODE3MDk4MGI5ZjIzYzEyMGZjMjJlNzFkYTg4MGY3ZmE4NTI0IiwidGFnIjoiIn0%3D",
+      "domain": "staging.tmp1.dev",
+      "path": "/",
+      "expires": 1766050211.529226,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "XSRF-TOKEN",
+      "value": "eyJpdiI6Ii9xQTN6aGdjZXFZajJUaDNuRkhaUlE9PSIsInZhbHVlIjoiRXBkSkdvbE56dWRTalJKd21zL2JVdHVuV241OExTR1o2Q0Q0amxsR1NqV1NBdEQxUUp1aHg5bVMzY2l3Vk9lYkZQRnh5aVp1dXZEZzBBdENLSGhjS2FSN0RUdC84WDJTQkhjVzBhWXBST3p5V20zR3JOSGw4Zkl2THRTQ1o4RkUiLCJtYWMiOiIyZTU2MWIzOTc3YWEwNzE3MDZhYjY4Zjk5YjI1Y2U2YjBlZjlkNzMyOWMxOGI3MDFhNDM4YTU4MWYzNWI4ZWRiIiwidGFnIjoiIn0%3D",
+      "domain": "staging.tmp1.dev",
+      "path": "/",
+      "expires": 1731497412.523171,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xcloud_staging_session",
+      "value": "eyJpdiI6Ik9nZktkK25IRjNybWYwUENQT3YrOVE9PSIsInZhbHVlIjoiTWxDQ0FPQXEvMTJtcGgwYXMzQWFqbURYMVR6a0s5SWgrMTVhRmNCeStmbDlJbndoaVFWU2hPTU5KR1BNR2JxWHNqeGxiR2UraTlBUG1iSnVOTEttaE5McTRSN2pQNm5oTG1UZEtkTy9MOC9FdUx2MlRvNnJmL0tXTTRJUnJ6T2YiLCJtYWMiOiI4NGJjYjcxZTk5MmQ3NGFiYjVmMzczZTZhOWZhYmY5ZGZiMDUyY2MxODNmNTVkN2JlOTJhNjQyMmM4ZTZiZmY3IiwidGFnIjoiIn0%3D",
+      "domain": "staging.tmp1.dev",
+      "path": "/",
+      "expires": 1731497412.523236,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://staging.tmp1.dev",
+      "localStorage": [
+        {
+          "name": "pusherTransportTLS",
+          "value": "{\"timestamp\":1731490210726,\"transport\":\"ws\",\"latency\":297}"
+        }
+      ]
+    }
+  ]
+}
